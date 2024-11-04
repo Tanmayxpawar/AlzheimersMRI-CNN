@@ -9,7 +9,7 @@ The dataset consists of augmented MRI images of Alzheimer's patients. The images
 - **Very Mild Demented**
 - **Mild Demented**
 - **Moderate Demented**
-
+  
 🔗 **Dataset Link:** [Augmented Alzheimer's MRI Dataset on Kaggle](https://www.kaggle.com/datasets/uraninjo/augmented-alzheimer-mri-dataset)  
 📁 **Dataset Path:** `/kaggle/input/augmented-alzheimer-mri-dataset/`
 
