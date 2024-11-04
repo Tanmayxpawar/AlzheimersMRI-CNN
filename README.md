@@ -44,36 +44,32 @@ The project requires the following libraries:
 You can install these dependencies with:
 ```bash
 pip install numpy tensorflow matplotlib
+```
 
-##🚀 Training and Evaluation
+## 🚀 Training and Evaluation
+
 The training script involves:
+* **Data Loading:** Images are loaded using `image_dataset_from_directory`
+* **Data Preprocessing:** Images are resized and normalized
+* **Training:** The VGG16 model is fine-tuned on the training dataset
+* **Validation:** The model is evaluated on a validation dataset
 
-Data Loading: Images are loaded using image_dataset_from_directory.
-Data Preprocessing: Images are resized and normalized.
-Training: The VGG16 model is fine-tuned on the training dataset.
-Validation: The model is evaluated on a validation dataset.
+## 📊 Training Results
 
-##📊 Training Results
 The model achieved impressive results during training:
+* **Final Training Accuracy:** **99.24%** 🎉
+* **Final Validation Accuracy:** **98.85%** 🌟
+* **Final Training Loss:** **0.0230** 📉
+* **Final Validation Loss:** **0.0380** 📈
 
-Final Training Accuracy: 99.24% 🎉
-Final Validation Accuracy: 98.85% 🌟
-Final Training Loss: 0.0230 📉
-Final Validation Loss: 0.0380 📈
+## 📝 Manual Early Stopping
 
-##📝 Manual Early Stopping
 Manual early stopping is implemented to prevent overfitting. During training, if the validation accuracy does not improve for a specified number of epochs, the training is halted. This approach ensures that the model retains its ability to generalize on unseen data, rather than merely memorizing the training dataset.
 
-##🧪 Inference
-To make predictions on new images, follow these steps:
+## 📊 Conclusion
 
-Preprocess the image (resize to 224x224, normalize).
-Load the image as an array, add batch dimensions, and use the model to predict.
-Display the input image along with the predicted class.
-
-##📊 Conclusion
 The VGG16 model effectively classifies the severity of Alzheimer's disease based on MRI images. Future improvements could involve exploring additional models or fine-tuning strategies to enhance accuracy.
 
-##🎉 Acknowledgments
+## 🎉 Acknowledgments
 
 Thank you for reviewing this project! Your feedback and contributions are welcome!
